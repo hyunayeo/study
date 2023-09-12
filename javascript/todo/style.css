@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+h1 {
+  padding: 5px;
+  font-style: italic;
+  background-color: peachpuff;
+}
+input {
+  width: 90%;
+  height: 30px;
+  font-size: 20px;
+}
+
+/* button1 */
+.button1 {
+  position: relative;
+  width: 5%;
+  background-color: palegreen;
+}
+
+.button1:hover,
+.button1:focus {
+  background-color: #ffcfcf;
+}
+
+.delete {
+  background-color: aqua;
+}
+
+/* content */
+.content {
+  /* width: max-content; */
+  border-bottom: 1px dashed black;
+  margin: 3px;
+  padding: 4px;
+  /* background-color: #d9d6b6; */
+  background-color: #ffeeee;
+}
+.content:hover {
+  /* background-color: rgb(255, 182, 193); */
+  background-color: #ffcfcf;
+  font-weight: bolder;
+}
+
+.content.done {
+  text-decoration: line-through;
+  background-color: whitesmoke;
+  color: gray;
+}

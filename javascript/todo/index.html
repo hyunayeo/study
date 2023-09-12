@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-size: 20px;
+    }
+
+    h1 {
+      padding: 5px;
+      font-style: italic;
+      background-color: peachpuff;
+    }
+    input {
+      width: 90%;
+      height: 30px;
+      font-size: 20px;
+    }
+
+    /* button1 */
+    .button1 {
+      position: relative;
+      width: 5%;
+      background-color: beige;
+    }
+
+    .button1:hover,
+    .button1:focus {
+      background-color: #ffcfcf;
+    }
+
+    .delete {
+      margin-left: 20px;
+    }
+
+    /* content */
+    .content {
+      /* width: max-content; */
+      border-bottom: 1px dashed black;
+      margin: 3px;
+      padding: 4px;
+      /* background-color: #d9d6b6; */
+      background-color: #ffeeee;
+    }
+    .content:hover {
+      /* background-color: rgb(255, 182, 193); */
+      background-color: #ffcfcf;
+      font-weight: bolder;
+    }
+
+    .content.done {
+      text-decoration: line-through;
+      background-color: whitesmoke;
+      color: gray;
+    }
+  </style>
+  <body>
+    <h1>Todo list</h1>
+    <input type="text" placeholder="to do" />
+    <button class="button1">+</button>
+    <div class="content-list"></div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
