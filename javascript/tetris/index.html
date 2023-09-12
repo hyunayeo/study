@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <canvas id="canvas"></canvas>
+      <div class="right-columns">
+        <div>
+          <h1>TETRIS</h1>
+          <p>Piece: <span id="piece">0</span></p>
+          <p>Line: <span id="line">0</span></p>
+          <!-- <p>Level: <span id="level">0</span></p> -->
+        </div>
+        <button onclick="play()" class="play-button">Play</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
