@@ -35,9 +35,14 @@
         pstmt.setString(3, address);
         pstmt.setString(4, hobby);
         pstmt.executeUpdate();
-
-    } catch (Exception e) {
-        e.printStackTrace();
+%>
+저장되었습니다.
+<%
+} catch (Exception e) {
+    e.printStackTrace();
+%>
+에러가 발생하였습니다.
+<%
     } finally {
         if (pstmt != null) try {
             pstmt.close();
@@ -50,7 +55,3 @@
     }
 
 %>
-<%=name%>
-<%=email%>
-<%=address%>
-<%=hobby%>
